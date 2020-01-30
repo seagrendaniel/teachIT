@@ -3,10 +3,13 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}> 
-    <View style={styles.header}>
-      <Text style={styles.letterDisplay}>TeachIT</Text>
-    </View>
+    <View style={styles.container}>
+      <View style={{flex: 1, backgroundColor: 'pink', height: 100}}>
+        <Text>TeachIT</Text>
+      </View>
+      <View style={{flex: 1, backgroundColor: 'orange', height: 100}}>
+      <Text> Box Goes Here</Text>
+      </View>
     </View>
   );
 }
@@ -14,17 +17,17 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'red',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  header: {
-    // flex: 1
-    // backgroundColor: 'pink'
-  },
   letterDisplay: {
-    fontSize: 30,
+    height: 200,
+    backgroundColor: 'pink',
+    flex: 1,
+    fontSize: 10,
+    color: 'blue',
     fontWeight: 'bold',
-    // fontFamily: ''
+    textAlign: 'auto',
   }
 });
