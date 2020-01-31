@@ -4,11 +4,14 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={{flex: 1, backgroundColor: 'pink', height: 100}}>
+      <View style={{flex: 2, backgroundColor: 'pink', height: 100}}>
         <Text>TeachIT</Text>
       </View>
-      <View style={{flex: 1, backgroundColor: 'orange', height: 100}}>
-      <Text> Box Goes Here</Text>
+      <View style={{flex: 2, backgroundColor: 'orange', height: 100}}>
+      <Text>Import Box Goes Here</Text>
+      </View>
+      <View>
+        <Text>Select a letter or number below: </Text>
       </View>
     </View>
   );
